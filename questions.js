@@ -3,7 +3,7 @@ var selectElementsStartingWithA = function(array) {
     return word.charAt(0) === 'a';
   });
   return result;
-}
+};
 
 var selectElementsStartingWithVowel = function(array) {
   var result = []
@@ -11,11 +11,14 @@ var selectElementsStartingWithVowel = function(array) {
       if(word.charAt(0).match(/[aeoiu]/)) {result.push(word)}
     });
   return result;
-}
+};
 
 var removeNullElements = function(array) {
-  return 'Write your method here';
-}
+  var result = array.filter(function(word) {
+    return word !== null;
+  });
+  return result;
+};
 
 var removeNullAndFalseElements = function(array) {
   return 'Write your method here';
