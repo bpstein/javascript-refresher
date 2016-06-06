@@ -1,16 +1,16 @@
 var selectElementsStartingWithA = function(array) {
   var result = array.filter(function(word) {
-    return word.charAt(0) === 'a'; 
+    return word.charAt(0) === 'a';
   });
   return result;
 }
 
-// var selectElementsStartingWithA = function(array) {
-//   return 'Write your method here';
-// }
-
 var selectElementsStartingWithVowel = function(array) {
-  return 'Write your method here';
+  var result = []
+    array.forEach(function(word) {
+      if(word.charAt(0).match(/[aeoiu]/)) {result.push(word)}
+    });
+  return result;
 }
 
 var removeNullElements = function(array) {
