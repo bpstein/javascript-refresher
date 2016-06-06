@@ -21,7 +21,10 @@ var removeNullElements = function(array) {
 };
 
 var removeNullAndFalseElements = function(array) {
-  return 'Write your method here';
+    var result = array.filter(function(word) {
+    return word !== null && word !== false;
+  });
+  return result;
 }
 
 var reverseWordsInArray = function(array) {
